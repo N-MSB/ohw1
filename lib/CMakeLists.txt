@@ -29,7 +29,7 @@ if (MSVC)
         /W4
     )
 else ()
-    target_compile_options(homework_lib PRIVATE
+    target_compile_options(homework1_lib PRIVATE
         -Wall -Wextra -pedantic -Werror
     )
 endif()
