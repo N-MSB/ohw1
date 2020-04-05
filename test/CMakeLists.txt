@@ -31,14 +31,9 @@ set_target_properties(
 )
 
 target_link_libraries(
-    test_version 
-    PRIVATE 
-    homework1_lib
-)
-
-target_link_libraries(
     test_version
     ${Boost_LIBRARIES}
+    homework1_lib
 )
 
 if (MSVC)
