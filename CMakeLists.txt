@@ -6,8 +6,6 @@ add_subdirectory(src)
 add_subdirectory(lib)
 #add_subdirectory(test)
 
-#install(TARGETS homework1_cli RUNTIME DESTINATION lib)
-
 set(CPACK_GENERATOR DEB)
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
@@ -18,3 +16,6 @@ set(CPACK_PACKAGE_CONTACT example@example.com)
 
 include(CPack)
 
+enable_testing()
+
+add_test(test_version test_version)
