@@ -4,7 +4,7 @@ project(homework1 VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 add_subdirectory(src)
 add_subdirectory(lib)
-#add_subdirectory(test)
+add_subdirectory(test)
 
 set(CPACK_GENERATOR DEB)
 
