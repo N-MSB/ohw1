@@ -38,8 +38,9 @@ set_target_properties(
 
 target_link_libraries(
     test_version
-    ${Boost_LIBRARIES}
+    PRIVATE
     homework1_lib
+    ${Boost_LIBRARIES}
 )
 
 if (MSVC)
@@ -52,7 +53,7 @@ else ()
     )
 endif()
 
-install(TARGETS test_version RUNTIME DESTINATION bin)
+#install(TARGETS test_version RUNTIME DESTINATION bin)
 
 
 
