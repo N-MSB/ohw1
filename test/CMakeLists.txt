@@ -15,7 +15,13 @@ set_target_properties(
 target_include_directories(
     test_version
     PRIVATE
-    "${CMAKE_CURRENT_SOURCE_DIR}/../lib
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+target_include_directories(
+    test_version
+    PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/../lib
 )
 
 set_target_properties(
