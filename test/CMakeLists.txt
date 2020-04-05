@@ -30,16 +30,14 @@ set_target_properties(
     INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
 )
 
-##target_link_libraries(
-#    test_version 
-#    PRIVATE 
-#    homework1_lib
-#)
+target_link_libraries(
+    test_version 
+    PRIVATE 
+    homework1_lib
+)
 
 target_link_libraries(
     test_version
-    PRIVATE
-    homework1_lib
     ${Boost_LIBRARIES}
 )
 
