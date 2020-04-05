@@ -5,7 +5,7 @@
 int main ()
 {
     std::cout << "Hello, World!\n";
-    std::cout << "Version: " << version() << std::endl;
+    std::cout << "Version: " << lib::version() << std::endl;
     
     return 0;
 }
