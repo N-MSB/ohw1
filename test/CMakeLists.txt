@@ -18,7 +18,7 @@ message ("!!!!!!!!!!!!!!!test!!!!!!!CMAKE_CURRENT_SOURCE_DIR : ${CMAKE_CURRENT_S
 target_include_directories(
     test_version
     PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_BINARY_DIR}
 )
 
 target_include_directories(
