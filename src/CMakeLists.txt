@@ -20,13 +20,13 @@ message ("!!!!!!!!!!!!!!!src!!!!!!!CMAKE_SOURCE_DIR : ${CMAKE_SOURCE_DIR}")
 target_include_directories(
     homework1_cli
     PRIVATE
-    ${CMAKE_CURRENT_BINARY_DIR}
+    ${CMAKE_BINARY_DIR}
 )
 
 target_include_directories(
     homework1_cli
     PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/../lib
+    ${CMAKE_SOURCE_DIR}/../lib
 )
 
 target_link_libraries(
