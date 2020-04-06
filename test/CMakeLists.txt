@@ -12,8 +12,8 @@ set_target_properties(
     CXX_STANDARD_REQUIRED ON
 )
 
-message ("!!!!!!!!!!!!!!!CMAKE_CURRENT_BINARY_DIR : ${CMAKE_BINARY_SOURCE_DIR}")
-message ("!!!!!!!!!!!!!!!CMAKE_CURRENT_SOURCE_DIR : ${CMAKE_CURRENT_SOURCE_DIR}")
+message ("!!!!!!!!!!!!!!!test!!!!!!!CMAKE_CURRENT_BINARY_DIR : ${CMAKE_CURRENT_BINARY_DIR}")
+message ("!!!!!!!!!!!!!!!test!!!!!!!CMAKE_CURRENT_SOURCE_DIR : ${CMAKE_CURRENT_SOURCE_DIR}")
 
 target_include_directories(
     test_version
