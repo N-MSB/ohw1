@@ -26,7 +26,7 @@ target_include_directories(
 target_include_directories(
     homework1_cli
     PRIVATE
-    ${CMAKE_SOURCE_DIR}/../lib
+    ${CMAKE_CURRENT_SOURCE_DIR}/../lib
 )
 
 target_link_libraries(
