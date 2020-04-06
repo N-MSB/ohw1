@@ -12,13 +12,11 @@ set_target_properties(
     CXX_STANDARD_REQUIRED ON
 )
 
-message ("!!!!!!!!!!!!!!!lib!!!!!!!CMAKE_CURRENT_BINARY_DIR : ${CMAKE_CURRENT_BINARY_DIR}")
-message ("!!!!!!!!!!!!!!!lib!!!!!!!CMAKE_CURRENT_SOURCE_DIR : ${CMAKE_CURRENT_SOURCE_DIR}")
-
 target_include_directories(
     homework1_lib
     PRIVATE 
-    ${CMAKE_CURRENT_BINARY_DIR}
+    #${CMAKE_CURRENT_BINARY_DIR}
+    ${CMAKE_BINARY_DIR}
 )
 
 target_include_directories(
