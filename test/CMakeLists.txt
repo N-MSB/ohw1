@@ -24,7 +24,8 @@ target_include_directories(
 target_include_directories(
     test_version
     PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/../lib
+    #${CMAKE_CURRENT_SOURCE_DIR}/../lib
+    ${CMAKE_SOURCE_DIR}/lib
 )
 
 set_target_properties(
