@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(main VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+project(main)
 
 configure_file(version.h.in version.h)
 
@@ -15,7 +15,7 @@ set_target_properties(
 target_include_directories(
     homework1_cli
     PRIVATE
-    ${CMAKE_BINARY_DIR}
+    ${CMAKE_CURRENT_BINARY_DIR}
 )
 
 target_include_directories(
