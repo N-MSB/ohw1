@@ -20,12 +20,12 @@ target_include_directories(
 
 target_include_directories(
     homework1_cli
-    PRIVATE
+    #PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../lib
 )
 
 target_link_libraries(
-    homework1_cli PRIVATE
+    homework1_cli #PRIVATE
     homework1_lib
 )
 
