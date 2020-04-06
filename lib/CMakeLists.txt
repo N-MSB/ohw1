@@ -4,7 +4,7 @@ project(Library)
 
 #configure_file(version.h.in version.h)
 
-add_library(homework1_lib lib.cpp)
+add_library(homework1_lib lib.cpp lib.h)
 
 set_target_properties(
     homework1_lib PROPERTIES  
