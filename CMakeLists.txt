@@ -2,9 +2,6 @@ cmake_minimum_required(VERSION 3.2)
 
 project(homework1 VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
-message ("!!!!!!!!!!!!!!!top!!!!!!!CMAKE_CURRENT_BINARY_DIR : ${CMAKE_CURRENT_BINARY_DIR}")
-message ("!!!!!!!!!!!!!!!top!!!!!!!CMAKE_CURRENT_SOURCE_DIR : ${CMAKE_CURRENT_SOURCE_DIR}")
-
 add_subdirectory(src)
 add_subdirectory(lib)
 #add_subdirectory(test)
