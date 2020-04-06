@@ -24,7 +24,7 @@ target_include_directories(
 target_include_directories(
     homework1_lib
     PRIVATE 
-    ${CMAKE_CURRENT_BINARY_DIR}/../src
+    ${CMAKE_CURRENT_SOURCE_DIR}/../src
 )
 
 if (MSVC)
