@@ -19,8 +19,8 @@ target_include_directories(
 )
 
 target_include_directories(
-    test_version PUBLIC
-    #PRIVATE
+    test_version 
+    PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../lib
 )
 
