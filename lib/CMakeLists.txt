@@ -4,7 +4,7 @@ project(Library)
 
 #configure_file(version.h.in version.h)
 
-add_library(homework1_lib lib.cpp lib.h)
+add_library(homework1_lib lib.cpp)
 
 set_target_properties(
     homework1_lib PROPERTIES  
@@ -15,8 +15,7 @@ set_target_properties(
 target_include_directories(
     homework1_lib
     PRIVATE 
-    #${CMAKE_CURRENT_BINARY_DIR}
-    ${CMAKE_BINARY_DIR}
+    ${CMAKE_CURRENT_BINARY_DIR}
 )
 
 target_include_directories(
@@ -27,7 +26,7 @@ target_include_directories(
 
 if (MSVC)
     target_compile_options(homework1_lib PRIVATE
-        /W4
+    /W4
     )
 else ()
     target_compile_options(homework1_lib PRIVATE
