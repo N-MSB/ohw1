@@ -24,6 +24,12 @@ target_include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/../src
 )
 
+target_include_directories(
+    homework1_lib
+    PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/../test
+)
+
 if (MSVC)
     target_compile_options(homework1_lib PRIVATE
     /W4
