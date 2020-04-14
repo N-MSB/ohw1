@@ -24,7 +24,7 @@ set_target_properties(
 #    ${CMAKE_CURRENT_SOURCE_DIR}/../src
 #)
 
-message("!!!!!!!!!!!!!!!!!CMAKE_CURRENT_SOURCE_DIR/../src----------------${CMAKE_CURRENT_SOURCE_DIR}/../src")
+message("!!!!!!!!!!!!!!!!!CMAKE_CURRENT_SOURCE_DIR/../src----------------${CMAKE_CURRENT_SOURCE_DIR/../src}")
 message("!!!!!!!!!!!!!!!!!CMAKE_CURRENT_SOURCE_DIR----------------${CMAKE_CURRENT_SOURCE_DIR}")
 message("!!!!!!!!!!!!!!!!!CMAKE_CURRENT_BINARY_DIR/../src----------------${CMAKE_CURRENT_BINARY_DIR}/../src")
 
