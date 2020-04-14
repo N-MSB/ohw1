@@ -46,7 +46,7 @@ else ()
     )
 endif()
 
-#install(TARGETS test_version RUNTIME DESTINATION bin)
+install(TARGETS test_version RUNTIME DESTINATION bin)
 
 
 
