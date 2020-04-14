@@ -12,18 +12,33 @@ set_target_properties(
     CXX_STANDARD_REQUIRED ON
 )
 
-target_include_directories(
-    homework1_lib
-    PRIVATE 
-    ${CMAKE_CURRENT_BINARY_DIR}
-)
+##target_include_directories(
+#    homework1_lib
+#    PRIVATE 
+#    ${CMAKE_CURRENT_BINARY_DIR}
+#)
+
+##target_include_directories(
+#    homework1_lib
+#    PRIVATE 
+#    ${CMAKE_CURRENT_SOURCE_DIR}/../src
+#)
+
+message("!!!!!!!!!!!!!!!!!CMAKE_CURRENT_SOURCE_DIR/../src----------------${CMAKE_CURRENT_SOURCE_DIR}/../src")
+message("!!!!!!!!!!!!!!!!!CMAKE_CURRENT_SOURCE_DIR----------------${CMAKE_CURRENT_SOURCE_DIR}")
+message("!!!!!!!!!!!!!!!!!CMAKE_CURRENT_BINARY_DIR/../src----------------${CMAKE_CURRENT_BINARY_DIR}/../src")
+
+
 
 target_include_directories(
     homework1_lib
-    PRIVATE 
+    PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../src
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_BINARY_DIR}/../src
 )
-
+    
 if (MSVC)
     target_compile_options(homework1_lib PRIVATE
     /W4
