@@ -12,27 +12,12 @@ set_target_properties(
     CXX_STANDARD_REQUIRED ON
 )
 
-##target_include_directories(
-#    homework1_lib
-#    PRIVATE 
-#    ${CMAKE_CURRENT_BINARY_DIR}
-#)
-
-##target_include_directories(
-#    homework1_lib
-#    PRIVATE 
-#    ${CMAKE_CURRENT_SOURCE_DIR}/../src
-#)
-
 
 target_include_directories(
     homework1_lib
-    #PRIVATE
-    #${CMAKE_CURRENT_SOURCE_DIR}/../src
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}/../src
-    ${CMAKE_CURRENT_BINARY_DIR}/../test
 )
     
 if (MSVC)
