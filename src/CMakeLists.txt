@@ -20,7 +20,8 @@ target_include_directories(
 
 target_include_directories(
     homework1_cli
-    PRIVATE
+    #PRIVATE
+    PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/../lib
     ${CMAKE_CURRENT_SOURCE_DIR}/../test
 )
