@@ -15,7 +15,8 @@ set_target_properties(
 
 target_include_directories(
     homework1_lib
-    PUBLIC
+    #PUBLIC
+    PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}/../src
 )
