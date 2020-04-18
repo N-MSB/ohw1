@@ -24,19 +24,15 @@ set_target_properties(
 #    ${CMAKE_CURRENT_SOURCE_DIR}/../src
 #)
 
-message("!!!!!!!!!!!!!!!!!CMAKE_CURRENT_SOURCE_DIR/../src----------------${CMAKE_CURRENT_SOURCE_DIR/../src}")
-message("!!!!!!!!!!!!!!!!!CMAKE_CURRENT_SOURCE_DIR----------------${CMAKE_CURRENT_SOURCE_DIR}")
-message("!!!!!!!!!!!!!!!!!CMAKE_CURRENT_BINARY_DIR/../src----------------${CMAKE_CURRENT_BINARY_DIR}/../src")
-
-
 
 target_include_directories(
     homework1_lib
-    PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/../src
+    #PRIVATE
+    #${CMAKE_CURRENT_SOURCE_DIR}/../src
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}/../src
+    ${CMAKE_CURRENT_BINARY_DIR}/../test
 )
     
 if (MSVC)
